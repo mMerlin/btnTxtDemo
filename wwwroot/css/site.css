@@ -54,3 +54,43 @@ body {
   height: 60px;
   line-height: 60px; /* Vertically center the text there */
 }
+
+/* With a bigger app, «parts of» this should be in a page specific css file.
+   Or a `context` specific css file, when grouping is useful. */
+
+.btntxtdemo #usertext {
+  resize: both;
+}
+
+.btntxtdemo .outputtext {
+  background: darkseagreen;
+  margin: 0;
+  padding: 0.5em;
+}
+
+/* .btntxtdemo input[type="submit"] { */
+.btntxtdemo #dotext {
+  display:inline-block;
+  padding:0.3em 1.2em;
+  margin:0 0.3em 0.3em 0.5em;
+  border-radius:2em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-weight:300;
+  color:#FFFFFF;
+  background-color:#4eb5f1;
+  text-align:center;
+  transition: all 0.2s;
+}
+
+/* .btntxtdemo input[type="submit"]:hover { */
+.btntxtdemo #dotext:hover {
+    background-color:#4095c6;
+}
+
+@media all and (max-width:30em) {
+  .btntxtdemo a.button {
+    display:block;
+    margin:0.2em auto;
+  }
+}

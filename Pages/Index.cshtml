@@ -4,7 +4,22 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="btntxtdemo">
+    <h1 class="display-4 text-center">Text Manipulation</h1>
+    <form>
+        <div>
+            <label for="usertext">@IndexModel.LabelText</label>
+            <a id="dotext" href="#" class="button">@IndexModel.ButtonText</a>
+        </div>
+        <textarea autofocus name="usertext" id="usertext"
+            placeholder="@IndexModel.InputExplain"
+            cols="@IndexModel.StartingCols"
+            rows="@IndexModel.StartingRows">
+        </textarea>
+    </form>
+    <h2 class="display-5 text-center">Calculated URI encoding</h2>
+    <section class="outputtext">
+        <p>|…|</p>
+    </section>
+    <p>HINT: paste in some greek or chinese characters to make it work a bit harder</p>
 </div>

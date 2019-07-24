@@ -1,4 +1,17 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
-
-// Write your Javascript code.
+﻿// Write your Javascript code.
+$(document).ready(function(){
+    var target = $(".outputtext p"); // Save so only need to look up once
+    target.text(""); // clear output on startup
+    $("#dotext").click(function(){
+        var i, processed;
+        inp = $("#usertext").val();
+        processed = "";
+        // URI encode, inserting spaces between tokens¦elements¦characters
+        for (i = 0; i < inp.length; i++) {
+            processed += encodeURIComponent(inp[i]) + " ";
+        }
+        target.text(processed);
+        // target.text(inp);
+        return false;
+    })
+});
