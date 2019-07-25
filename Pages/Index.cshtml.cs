@@ -18,7 +18,7 @@ namespace buttonTextDemo.Pages
         public const string InputExplain = "enter some text to be manipulated here";
         public void OnGet()
         {
-            Console.WriteLine("IndexModel OnGet");
+
         }
     }
 }
